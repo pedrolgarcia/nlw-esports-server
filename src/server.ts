@@ -2,8 +2,8 @@ import express from "express"
 
 const app = express()
 
-app.get("/ads", (req, res) => {
-  res.json({
+app.get("/ads", (request, response) => {
+  response.json({
     "hello": "world"
   })
 })
